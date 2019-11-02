@@ -3,13 +3,14 @@ import java.io.IOException;
 public class Application {
 
 	public static void main(String[] args) throws IOException {
+		
 		// TODO Auto-generated method stub
 		
-		DuplicateRemover dr = new DuplicateRemover();
+		DuplicateCounter dc = new DuplicateCounter();
 		
-		dr.remove("problem1.txt");
-		dr.write("unique_words.txt");
+		dc.count("problem2.txt");
 		
+		dc.write("unique_word_counts.txt");
 
 	}
 
